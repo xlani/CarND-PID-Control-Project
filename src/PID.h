@@ -1,6 +1,8 @@
 #ifndef PID_H
 #define PID_H
 
+#include <iostream>
+
 class PID {
 public:
   /*
@@ -12,10 +14,13 @@ public:
 
   /*
   * Coefficients
-  */ 
+  */
   double Kp;
   double Ki;
   double Kd;
+
+  //varible if UpdateError function already run once
+  bool update_initialized;
 
   /*
   * Constructor
