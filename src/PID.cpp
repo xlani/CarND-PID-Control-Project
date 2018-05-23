@@ -60,33 +60,3 @@ double PID::TotalError() {
     return res;
 
 }
-
-// double p_error;
-// double i_error;
-// double d_error;
-//
-// /*
-// * Coefficients
-// */
-// double Kp;
-// double Ki;
-// double Kd;
-
-// def twiddle(tol=0.2):
-//     # Don't forget to call `make_robot` before every call of `run`!
-//     p = [0, 0, 0]
-//     dp = [1, 1, 1]
-//     robot = make_robot()
-//     x_trajectory, y_trajectory, best_err = run(robot, p)
-//
-//     # TODO: twiddle loop here
-//     for i in len(p):
-//         p[i] += dp[i]
-//         _, _, err = run(robot, p)
-//         if(err < best_err):
-//             best_err = err
-//             dp[i] *= 1.1
-//         else:
-//             p[i] -= 2. * dp[i]
-//
-//     return p, best_err
